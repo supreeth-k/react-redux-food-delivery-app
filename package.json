@@ -31,7 +31,7 @@
   "scripts": {
     "start": "cd server && yarn start",
     "start-client": "react-scripts start",
-    "build": "react-scripts build && (cd server && yarn install --ignore-engines)",
+    "build": "yarn install react-scripts --ignore-engines && react-scripts build && (cd server && yarn install --ignore-engines)",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
 },
